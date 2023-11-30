@@ -105,6 +105,7 @@ femaleFisher <- fisher.test(tableFemale)
 femaleFisher
 ```
 
+The results of the Chi-Squared test indicate that the P value for the analyzed data is less than the commonly accepted threshold of 0.05, specifically $2.732\times10^{-4}$. This low value suggests a significant difference in the data. Additionally, the Chi-Squared statistic is 13, surpassing the one degree of freedom associated with this dataset. Notably, the likelihood of a non-vaccinated woman contracting Covid is 1.5 times higher than that of a woman who has received the vaccine.   
 
 ## LGBTQ
 
