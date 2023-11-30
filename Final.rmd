@@ -132,6 +132,15 @@ Displayed above is a Bar chart that contrasts the visual outcomes exclusively am
 
 It is evident that a significantly higher number of individuals in the vaccinated group experienced Covid contraction, whereas those who did not contract Covid exhibit a much closer correlation. Considering the sample size, the likelihood of this occurrence being purely coincidental is low.   
 
+### Numerical Results
+
+```{r}
+tableLGBTQ <- xtabs(~infected + treatment, data=lgbtq)
+rowPerc(tableLGBTQ)
+colPerc(tableLGBTQ)
+```
+
+
 ## Druggies
 
 
