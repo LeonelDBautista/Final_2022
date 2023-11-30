@@ -165,7 +165,46 @@ cat("\n","Condifence interval for LGBTQ: ",lgbtqLow," to ",lgbtqHigh)
 
 We see that the confidence interval is 7-26% far lower than 50% so we can say that this is not a very good vaccine.    
 
-## Druggies
+## Drug Users
 
+### Graphical Results
+
+```{r}
+barchartGC(~infected + treatment,data=drugUser)
+barchartGC(~infected + treatment,data=drugUser, type="percent")
+```
+
+### Numerical Results
+
+```{r}
+tableDrug <- xtabs(~infected + treatment, data=drugUser)
+rowPerc(tableDrug)
+colPerc(tableDrug)
+```
+
+The numeric findings complement the insights from the graphical results. The placebo group experienced a COVID contraction rate of around 10%, whereas the vaccinated group had a 90% COVID contraction rate. It is evident that the vaccine is ineffective in this testing scenario and, counterintuitively, appears to elevate the risk of COVID contraction for this group. Furthermore, this group exhibits more adverse effects than the LGBTQ group, which already experiences negative impacts.   
+
+### Inferential Results
+
+```{r}
+chisq.test(tableDrug)
+chisqtestGC(tableDrug)
+drugFisher <- fisher.test(tableDrug)
+drugFisher
+```
+
+The results of the Chi-Squared test reveal a significantly low P value of $2.842\times10^{-9}$ for the analyzed data, well below the conventional significance threshold of 0.05. This small P value strongly suggests a notable difference in the data. Additionally, the Chi-Squared statistic registers at 35, surpassing the one degree of freedom associated with this dataset. Notably, the odds of a person not vaccinated against COVID-19 contracting the virus in this group are approximately 1 in 8.   
+
+### Confidence Interval
+
+```{r}
+oddsDrug = drugFisher$estimate/(drugFisher$estimate +1)*100
+print(oddsDrug)
+drugLow=(drugFisher$conf.int[1]/(drugFisher$conf.int[1]+1))*100
+drugHigh=(drugFisher$conf.int[2]/(drugFisher$conf.int[2]+1))*100
+cat("\n","Condifence interval for Drug Users: ",drugLow," to ",drugHigh)
+```
+
+We see that the confidence interval is 4-21% far lower than 50% so we can say that this is also not a very good vaccine.   
 
 # Overall Results and Conclusions
