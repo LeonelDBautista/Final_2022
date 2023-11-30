@@ -42,6 +42,14 @@ Displayed above is a Bar chart illustrating the graphical outcomes exclusively f
 
 It is evident that the percentage of individuals in the placebo group who contracted Covid is more than twice that of those who remained unaffected. The group of individuals who did not contract Covid exhibits a much closer relationship. Considering the sample size, it is improbable that these findings occurred solely by chance.     
 
+### Numerical Results   
+
+```{r}
+tableMale <- xtabs(~infected + treatment, data=male)
+rowPerc(tableMale)
+colPerc(tableMale)
+```
+
 ## Females
 
 
