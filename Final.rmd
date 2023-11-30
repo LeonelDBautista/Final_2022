@@ -86,6 +86,15 @@ Displayed here is a bar chart that illustrates the graphical outcomes exclusivel
 
 It is evident that the percentage of individuals in the placebo group who contracted Covid is approximately one-third higher than the corresponding percentage in the non-contracted group. Conversely, the percentages of those who did not contract Covid are closely aligned.   
 
+### Numerical Results
+
+```{r}
+tableFemale <- xtabs(~infected + treatment, data=female)
+rowPerc(tableFemale)
+colPerc(tableFemale)
+```
+
+
 ## LGBTQ
 
 
