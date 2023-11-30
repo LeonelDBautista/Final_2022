@@ -75,6 +75,13 @@ cat("\n","Condifence interval for Males: ",maleLow," to ",maleHigh)
 
 ## Females
 
+### Graphical Results
+
+```{r}
+barchartGC(~infected + treatment,data=female)
+barchartGC(~infected + treatment,data=female, type="percent")
+```
+
 
 ## LGBTQ
 
