@@ -82,6 +82,9 @@ barchartGC(~infected + treatment,data=female)
 barchartGC(~infected + treatment,data=female, type="percent")
 ```
 
+Displayed here is a bar chart that illustrates the graphical outcomes exclusively for females derived from the data. The chart juxtaposes the rates of contracting Covid based on vaccination status, with the left side representing women who contracted Covid and the right side representing those who did not.   
+
+It is evident that the percentage of individuals in the placebo group who contracted Covid is approximately one-third higher than the corresponding percentage in the non-contracted group. Conversely, the percentages of those who did not contract Covid are closely aligned.   
 
 ## LGBTQ
 
