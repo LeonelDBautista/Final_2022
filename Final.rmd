@@ -128,6 +128,9 @@ barchartGC(~infected + treatment,data=lgbtq)
 barchartGC(~infected + treatment,data=lgbtq, type="percent")
 ```
 
+Displayed above is a Bar chart that contrasts the visual outcomes exclusively among drug users based on collected data. The comparison focuses on the incidence of contracting Covid in relation to vaccination status, with the left side representing individuals who contracted Covid and the right side representing those who did not.   
+
+It is evident that a significantly higher number of individuals in the vaccinated group experienced Covid contraction, whereas those who did not contract Covid exhibit a much closer correlation. Considering the sample size, the likelihood of this occurrence being purely coincidental is low.   
 
 ## Druggies
 
