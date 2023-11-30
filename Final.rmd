@@ -142,6 +142,15 @@ colPerc(tableLGBTQ)
 
 The numeric findings corroborate the insights gleaned from the graphical data. In the placebo group, Covid was contracted around 15% of the time, while the vaccinated group experienced Covid contraction at an 85% rate. This indicates that, contrary to expectations, the vaccine demonstrates ineffectiveness in this testing scenario. In fact, it appears to be inversely effective, potentially elevating the risk of Covid contraction within this group.   
 
+### Inferential Results
+
+```{r}
+chisq.test(tableLGBTQ)
+chisqtestGC(tableLGBTQ)
+lgbtqFisher <- fisher.test(tableLGBTQ)
+lgbtqFisher
+```
+
 ## Druggies
 
 
