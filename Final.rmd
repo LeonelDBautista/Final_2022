@@ -121,6 +121,12 @@ We see that the confidence interval is >50% and includes the 60% threshold, it i
 
 ## LGBTQ
 
+### Graphical Results
+
+```{r}
+barchartGC(~infected + treatment,data=lgbtq)
+barchartGC(~infected + treatment,data=lgbtq, type="percent")
+```
 
 
 ## Druggies
