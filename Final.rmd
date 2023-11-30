@@ -94,6 +94,7 @@ rowPerc(tableFemale)
 colPerc(tableFemale)
 ```
 
+The numeric findings align with the graphical outcomes, revealing that the placebo group experienced Covid contraction roughly 60% of the time, whereas the vaccinated group had a 40% contraction rate. This indicates the overall efficacy of the vaccine in this testing scenario, albeit with a lower effectiveness compared to male participants.   
 
 ## LGBTQ
 
