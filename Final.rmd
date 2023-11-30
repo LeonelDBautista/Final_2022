@@ -153,6 +153,16 @@ lgbtqFisher
 
 The results of the Chi-Squared test indicate a significantly low P value, specifically $6.668\times10^{-8}$, well below the conventional threshold of 0.05. This small P value suggests a notable difference in the tested data. Furthermore, the Chi-Squared statistic stands at 29, exceeding the degrees of freedom (one) in this dataset. In this group, the likelihood of a non-vaccinated individual contracting Covid is approximately 1 in 5.    
 
+### Confidence Interval
+
+```{r}
+oddsLGBTQ = lgbtqFisher$estimate/(lgbtqFisher$estimate +1)*100
+print(oddsLGBTQ)
+lgbtqLow=(lgbtqFisher$conf.int[1]/(lgbtqFisher$conf.int[1]+1))*100
+lgbtqHigh=(lgbtqFisher$conf.int[2]/(lgbtqFisher$conf.int[2]+1))*100
+cat("\n","Condifence interval for LGBTQ: ",lgbtqLow," to ",lgbtqHigh)
+```
+
 ## Druggies
 
 
