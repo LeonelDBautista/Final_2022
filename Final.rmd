@@ -50,6 +50,8 @@ rowPerc(tableMale)
 colPerc(tableMale)
 ```
 
+The numeric findings corroborate the insights gleaned from the graphical data. The placebo group experienced Covid infection around 70% of the time, whereas the vaccinated group had a 30% incidence rate. It is evident that the vaccine demonstrates overall efficacy in this testing context.   
+
 ## Females
 
 
