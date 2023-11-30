@@ -61,7 +61,7 @@ maleFisher <- fisher.test(tableMale)
 maleFisher
 ```
 
-
+The Chi-Squared test reveals a significantly low P value of $1.098\times10^{-13}$ for the analyzed data, well below the conventional threshold of 0.05. This minute value strongly suggests a notable difference in the data. Additionally, the Chi-Squared statistic stands at 55, considerably surpassing the one degree of freedom derived from this dataset. Notably, the likelihood of a non-vaccinated individual contracting Covid is 2.2 times higher than that of a vaccinated individual.   
 
 ## Females
 
