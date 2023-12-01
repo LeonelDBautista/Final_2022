@@ -174,6 +174,8 @@ barchartGC(~infected + treatment,data=drugUser)
 barchartGC(~infected + treatment,data=drugUser, type="percent")
 ```
 
+The displayed bar chart illustrates the visual outcomes for individuals identified as drug users and their likelihood of contracting Covid, categorized by their vaccination status. The left side represents positive cases, while the right side denotes negative cases. Notably, in this particular scenario, individuals with Covid were five to six times more likely to have received the vaccine rather than the placebo. This observation raises the possibility that drug users may inherently be more susceptible to contracting Covid due to compromised immune systems or potential interactions between the vaccine and substances in their system. However, further research is necessary to delve into this correlation.    
+
 ### Numerical Results
 
 ```{r}
@@ -208,3 +210,9 @@ cat("\n","Condifence interval for Drug Users: ",drugLow," to ",drugHigh)
 We see that the confidence interval is 4-21% far lower than 50% so we can say that this is also not a very good vaccine.   
 
 # Overall Results and Conclusions
+
+Based on the comprehensive results across all categories, it is confidently established that there exists statistical significance within this dataset, enabling us to derive meaningful conclusions. The alternative hypothesis, $H_A$, is substantiated, leading to the rejection of the null hypothesis, $H_0$. This implies compelling statistical evidence indicating the impact of the vaccine on the Covid infection rate. Notably, it's crucial to highlight that the vaccine's efficacy varied among Male, Female, Drug Users, and LGBTQ participants.    
+
+For both males and females, the vaccine demonstrated a nearly identical effect, with individuals in the placebo treatment group being almost twice as likely to contract Covid. In contrast, Drug Users and LGBTQ members exhibited adverse reactions to the vaccine, with an 8 and 5 times higher likelihood of getting COVID, respectively, compared to those who were not vaccinated. The reasons behind this phenomenon remain unknown and necessitate further statistical tests with additional data.    
+
+Despite these subgroup variations, the overall conclusion remains that there is statistical significance between the vaccine and the Covid infection rate. It is recommended for men and women seeking to maintain health to receive the vaccine. However, for Drug Users and LGBTQ individuals, refraining from vaccination may be a more prudent choice.    
